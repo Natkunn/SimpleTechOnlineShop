@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body{
+	background: -webkit-linear-gradient(-45deg, #6B00B2FF, darkblue);
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	padding: 10px;
+}
+.card{
+	margin: auto;
+	padding: 15px;
+	box-shadow: 1px 1px 5px black;
+	border-radius: 10px;
+	background-color: white;
+}
+header{
+	display: inline;
+}
+.jumbotron{
+	font-size: 20px;
+	text-align: center;
+	background-image: url("../images/tech_background.png");
+	filter: brightness(70%);
+	padding: 15px;
+	color: white;
+	text-shadow: 1px 1px 5px blue;
+	line-height: 1em;
+}
+nav{
+	background-color: #000338FF;
+	position: sticky;
+	top: 0;
+	padding: 1px;
+}
+nav li{
+	display: inline;
+	list-style: none;
+}
+nav a{
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+	margin-left: 50px;
+}
+nav a:hover{
+	background-color: #110084FF;
+	border-radius: 10px;
+}
+main{
+	overflow: auto;
+}
+#home{
+	background-image: url(../images/background1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	font-size: 30px;
+	text-shadow: -2px 2px 1px darkblue;
+	display: flex;
+	flex-wrap: wrap;
+}
+#home section{
+	width: 50%;
+	text-align: center;
+	padding: 50px;
+}
+#home em{
+	color: #FFEC35FF;
+}
+#home p{
+	margin: auto;
+	font-weight: bold;
+	width: 100%;
+	text-align: left;
+}
+#home table{
+	border: solid 1px;
+	border-radius: 10px;
+	border-spacing: 0;
+	width: 70%;
+	min-height: 230px;
+	margin: 50px auto;
+	overflow: hidden;
+}
+#home td{
+	width: 50%;
+	transition: 0.3s;
+	border: solid 1px;
+}
+#home a{
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+#home td:hover{
+	background-color: #000000A8;
+
+}
+#home a:hover{
+	text-decoration: underline;
+}
+#content{
+	float: left;
+	width: 75%;
+}
+#menu h1{
+	font-size: 40px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border-bottom: solid 1px grey;
+}
+.flex-container-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.list_menu{
+	background-color: white;
+	border: solid 1px lightgrey;
+	flex-basis: 25%;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+	padding: 5px;
+}
+.list_menu img{
+	padding: 20px;
+	width: 100%;
+}
+.list_menu h5{
+	color: transparent;
+	font-size: 1px;
+	transition: 0.3s;
+}
+.list_menu:hover{
+	background-color: lightgrey;
+}
+.list_menu:hover h5{
+	color: #FF9814FF;
+	text-shadow: 1px 1px 2px black;
+	font-size: 20px;
+}
+aside{
+	float: right;
+	width: 25%;
+}
+#biodata{
+	text-align: center;
+	line-height: 0.5em;
+}
+#biodata header p{
+	font-weight: bold;
+}
+.profile{
+	width: 50%;
+	border-radius: 50%;
+	padding: 2px;
+	background-color: grey;
+}
+#biodata section ul{
+	margin-left: -40px;
+}
+#biodata section ul li{
+	display: inline;
+	list-style: none;
+	padding: 10px;
+}
+#biodata section img{
+	width: 10%;
+}
+#cart{
+	margin-top: 10px;
+}
+#cart table{
+	border-collapse: collapse;
+	width: 100%;
+}
+#cart h4{
+	text-align: right;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#cart h4:hover{
+	color: red;
+}
+footer{
+	margin-top: 100px;
+	width: 100%;
+	padding: 20px;
+	background-image: url("../images/tech_background.png");
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+@media screen and (max-width: 800px){
+	nav{
+		text-align: center;
+	}
+	nav a{
+		margin-left: 0;
+	}
+	#home section{
+		width: 100%;
+		padding: 30px;
+		font-size: 21px;
+	}
+	#home table{
+		margin: 0 auto;
+	}
+	#home table{
+		min-height: 100px;
+	}
+	#content, aside{
+		width: 100%;
+	}
+	.list_menu{
+		flex-basis: 50%;
+	}
+	.profile{
+		width: 30%;
+	}
+}
